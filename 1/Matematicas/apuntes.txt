@@ -1,0 +1,13 @@
+Tema 1 — Límites y continuidad
+================================
+
+Este es un recurso de ejemplo. Sustituye este archivo por tus propios
+apuntes en texto plano, Markdown, PDF, imágenes, audio o vídeo: el
+visor de la página se adapta automáticamente al tipo de archivo.
+
+Definición informal de límite:
+  El límite de f(x) cuando x tiende a "a" es L si f(x) se acerca a L
+  cuanto más se acerca x a "a" (sin llegar a valer "a").
+
+Recuerda ejecutar ./scan.sh después de añadir o quitar archivos para
+que la página los detecte.

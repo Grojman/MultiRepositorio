@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-09-06T20:35:16Z",
+  "root": {
+    "name": "root",
+    "type": "dir",
+    "path": "",
+    "children": [
+      {
+        "name": "1",
+        "type": "dir",
+        "path": "1",
+        "children": [
+          {
+            "name": "Matematicas",
+            "type": "dir",
+            "path": "1/Matematicas",
+            "children": [
+              {
+                "name": "apuntes.txt",
+                "type": "file",
+                "path": "1/Matematicas/apuntes.txt",
+                "ext": "txt",
+                "kind": "text",
+                "size": 536
+              },
+              {
+                "name": "tema1.json",
+                "type": "file",
+                "path": "1/Matematicas/tema1.json",
+                "ext": "json",
+                "kind": "test",
+                "size": 1124
+              }
+            ]
+          },
+          {
+            "name": "Programacion",
+            "type": "dir",
+            "path": "1/Programacion",
+            "children": [
+              {
+                "name": "diagrama.svg",
+                "type": "file",
+                "path": "1/Programacion/diagrama.svg",
+                "ext": "svg",
+                "kind": "image",
+                "size": 1205
+              },
+              {
+                "name": "introduccion.txt",
+                "type": "file",
+                "path": "1/Programacion/introduccion.txt",
+                "ext": "txt",
+                "kind": "text",
+                "size": 318
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "2",
+        "type": "dir",
+        "path": "2",
+        "children": []
+      },
+      {
+        "name": "3",
+        "type": "dir",
+        "path": "3",
+        "children": []
+      },
+      {
+        "name": "4",
+        "type": "dir",
+        "path": "4",
+        "children": []
+      }
+    ]
+  }
+}

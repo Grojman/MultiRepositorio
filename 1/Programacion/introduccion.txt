@@ -1,0 +1,8 @@
+Introducción a la programación
+================================
+
+Recurso de ejemplo en texto plano. Aquí puedes guardar apuntes,
+transcripciones o cualquier material de la asignatura.
+
+Conceptos básicos: variables, tipos de datos, estructuras de control
+(condicionales y bucles), funciones y estructuras de datos.

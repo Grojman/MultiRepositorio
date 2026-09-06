@@ -1,0 +1,33 @@
+{
+  "title": "Tema 1 - Límites y continuidad",
+  "questions": [
+    {
+      "question": "¿Qué es el límite de una función en un punto \"a\"?",
+      "answers": [
+        "El valor que toma la función exactamente en \"a\"",
+        "El valor al que se acerca la función cuando x se acerca a \"a\"",
+        "La derivada de la función en \"a\"",
+        "El área bajo la curva hasta \"a\""
+      ],
+      "correct": [1],
+      "multiple": false
+    },
+    {
+      "question": "¿Cuáles de las siguientes son condiciones necesarias para que una función sea continua en \"a\"? (selecciona todas las que apliquen)",
+      "answers": [
+        "Que f(a) esté definida",
+        "Que exista el límite de f(x) cuando x tiende a a",
+        "Que el límite coincida con f(a)",
+        "Que la función sea derivable en todo su dominio"
+      ],
+      "correct": [0, 1, 2],
+      "multiple": true
+    },
+    {
+      "question": "El límite de una constante \"k\" cuando x tiende a cualquier valor es:",
+      "answers": ["0", "k", "x", "Depende del valor de x"],
+      "correct": [1],
+      "multiple": false
+    }
+  ]
+}
