@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T20:35:16Z",
+  "generatedAt": "2026-09-06T20:52:43Z",
   "root": {
     "name": "root",
     "type": "dir",
@@ -55,6 +55,14 @@
                 "size": 318
               }
             ]
+          },
+          {
+            "name": "videopaloma.mp4",
+            "type": "file",
+            "path": "1/videopaloma.mp4",
+            "ext": "mp4",
+            "kind": "video",
+            "size": 127089508
           }
         ]
       },

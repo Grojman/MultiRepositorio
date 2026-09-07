@@ -240,6 +240,11 @@ App.Panes = (function () {
     return at ? at.closest('.pane-leaf') : null;
   }
 
+  function isOverTabstrip(x, y) {
+    const at = document.elementFromPoint(x, y);
+    return !!(at && at.closest('.pane-tabstrip'));
+  }
+
   function clearDropIndicators() {
     document.querySelectorAll('.pane-dropzone').forEach((n) => n.remove());
   }
@@ -249,15 +254,20 @@ App.Panes = (function () {
     const leafEl = leafElementAtPoint(e.clientX, e.clientY);
     if (!leafEl) { dragging.dropZone = null; return; }
     const leafId = leafEl.dataset.leafId;
-    const rect = leafEl.getBoundingClientRect();
-    const relX = (e.clientX - rect.left) / rect.width;
-    const relY = (e.clientY - rect.top) / rect.height;
-    const EDGE = 0.25;
     let zone = 'center';
-    if (relX < EDGE) zone = 'left';
-    else if (relX > 1 - EDGE) zone = 'right';
-    else if (relY < EDGE) zone = 'top';
-    else if (relY > 1 - EDGE) zone = 'bottom';
+    if (isOverTabstrip(e.clientX, e.clientY)) {
+      // Soltar sobre la tira de pestañas siempre mezcla, nunca divide el panel.
+      zone = 'center';
+    } else {
+      const rect = leafEl.getBoundingClientRect();
+      const relX = (e.clientX - rect.left) / rect.width;
+      const relY = (e.clientY - rect.top) / rect.height;
+      const EDGE = 0.25;
+      if (relX < EDGE) zone = 'left';
+      else if (relX > 1 - EDGE) zone = 'right';
+      else if (relY < EDGE) zone = 'top';
+      else if (relY > 1 - EDGE) zone = 'bottom';
+    }
     dragging.dropZone = { leafId, zone };
     showDropIndicator(leafEl, zone);
   }
